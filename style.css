@@ -1,1 +1,126 @@
-/* Write your CSS here */
+table, td {
+    border: 1px solid black;
+    margin: auto;
+}
+
+h1, h3 {
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+h3 {
+    margin-top: 10px;
+}
+h4 {
+    margin: 10px
+}
+
+td {
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+td:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+th {
+    background-color: lightblue;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+}
+
+th:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+
+.button {
+    background-color: pink;
+    margin-left: 10px;
+    margin-top: 7px;
+    height: 20px;
+
+}
+
+input {
+    height: 20px;
+    width: 90px;
+    margin-top: 5px
+}
+
+.container {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.change-color {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.blue {
+    background-color: rgb(69, 69, 243);
+    cursor: pointer;
+    color: white;
+}
+
+.red {
+    background-color: rgb(236, 90, 90);
+    cursor: pointer;
+    color: white;
+}
+
+.yellow {
+    background-color: rgb(252, 252, 127);
+    cursor: pointer;
+    color: black;
+}
+
+.purple {
+    background-color: rgb(185, 87, 185);
+    cursor: pointer;
+    color: white;
+}
+
+.pink {
+    background-color:pink;
+    cursor: pointer;
+    color: white;
+}
+
+.grey {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.green {
+    background-color: rgb(91, 223, 91);
+    cursor: pointer;
+    color: white;
+}
+
+.reset {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    border: white
+}
+
+.reset:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
