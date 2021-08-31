@@ -169,6 +169,7 @@ function restart() {
     let columnValue = columnInput.value
     columnValue = 10
     column = columnValue
+    savedColor = null
     addTable()
     rowInput.value = ""
     columnInput.value = ""

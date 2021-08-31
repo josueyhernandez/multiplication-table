@@ -1,6 +1,7 @@
-table, td {
+table {
     border: 1px solid black;
     margin: auto;
+    overflow: hidden;
 }
 
 h1, h3 {
@@ -23,10 +24,50 @@ td {
     text-align: center;
 }
 
-td:hover {
-    background-color: aqua;
-    cursor: pointer;
+  
+  td, th {
+      border: 1px solid #999;
+      padding: 10px;
+      position: relative;
+      cursor: pointer;
+  }
+  
+tr:hover {
+    background-color: #eee   
 }
+
+  td:hover::before { 
+      background-color: #eee;
+      content: '';  
+      height: 100%;
+      left: -5000px;
+      position: absolute;  
+      top: 0;
+      width: 10000px;   
+      z-index: -2;        
+  }
+  
+
+  td:hover::after, 
+  th:hover::after{ 
+      background-color: #ffa;
+      content: '';  
+      height: 10000px;    
+      left: 0;
+      position: absolute;  
+      top: -5000px;
+      width: 100%;
+      z-index: -1;        
+  }
+
+  td:hover {
+      background-color: rgb(183, 204, 243);
+  }
+  
+
+  body {
+    margin:8em;
+  }
 
 
 th {
@@ -36,10 +77,6 @@ th {
     font-size: 15px;
 }
 
-th:hover {
-    background-color: aqua;
-    cursor: pointer;
-}
 
 
 .button {
@@ -125,3 +162,4 @@ input {
     color: white;
     cursor: pointer;
 }
+
